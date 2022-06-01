@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gumisüti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #208000;">
+    <h1>Gumisüti</h1>
+    <footer>
+        <nav>
+            <ul class="nav">
+                <a href="csokis_lavasuti.html">Csokoládés lávasüti</a>
+                <a href="dios_kaves_pite.html">Diós, kávés pite</a>
+                <a class="ez" href="gumisuti.html">Gumisüti</a>
+            </ul>
+        </nav>
+    </footer>
+    <img src="Gumisüti.jpg" alt="Gumisüti" width="465px"><br>
+    <header><b>Elkészítési idő: 60-75 perc</b><br></header>
+    <aside><main><article><selection>
+        <h2>Hozzávalók (6 személyre)</h2>
+        <h4>
+            <li>6 tojás</li>
+            <li>3 cs vanílliás cukor</li>
+            <li>4 cs zselatin</li>
+            <li>1,5 ek kakaó</li>
+            <li>4 dl málnaszörp</li>
+            <li>1 pohár tejföl</li>
+            <li>porcukor</li>
+            <li>víz</li>
+        </h4>
+    </selection></article></main></aside>
+    <fieldset>
+        <legend><h2>Elkészítés</h2></legend>
+        <ol><b>
+            <li>réteg: 3 tojás sárgáját 1 cs vanilliás cukrot, 5 ek porcukrot habosra keverjük, majd hozzáadjuk a 3 tojásfehérje felvert habját. 1,5 dl vízben 3 ek zselatint forrásig keverjük, hűtőbe tesszük, ha megdermedt, mehet rá a második réteg.</li>
+            <li>réteg: Ugyanaz, mint az előző, de a tojássárgájához keverünk 1,5 ek kakaót. Ráöntjük az előző rétegre, hűtőőbe tesszük.</li>
+            <li>réteg: Tejfölt 7 ek porcukorral, vanilliáscukorralelkeverjük, a zselatint hozzáöntjük, mehet a tepsibe, és a hűtőbe.</li>
+            <li>réteg: 2 dl vízbe 4 ek zselatint forrásig melegítjük, majd 4 dl málnaszörpöt hozzáadunk, tepsibe öntjük.</li>
+            Pár óra múlva lehet szeletelni.
+        </b></ol>
+    </fieldset><br>
+    <button onclick="Alert()">Biztonságos?</button><br><br>
+    <button onclick="Confirm()">Próbálja meg szerencséjét!!!</button><br><br>
+    <button onclick="Prompt()">Recept keresés</button>
+    <script>
+        function Alert(){
+            alert("Hát persze");
+        }
+        function Confirm(){
+            if(window.confirm("Ön nyert!!!")){
+                window.location.href = 'Nyeremény.mp4';
+            }
+        }
+        function Prompt(){
+            let kerdes = prompt("Mi más érdekel?");
+            if(kerdes == "csokoládés lávasüti"){
+                window.location.href = "csokis_lavasuti.html";
+            }
+            if(kerdes == "diós kávés pite"){
+                window.location.href = "dios_kaves_pite.html";
+            }
+        }
+    </script>
+</body>
+</html>

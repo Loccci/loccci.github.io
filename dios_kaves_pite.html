@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diós, kávés pite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #208000;">
+    <h1>Kávés, diós pite</h1>
+    <footer>
+        <nav>
+            <ul class="nav">
+                <a href="csokis_lavasuti.html">Csokoládés lávasüti</a>
+                <a class="ez" href="dios_kaves_pite.html">Diós, kávés pite</a>
+                <a href="gumisuti.html">Gumisüti</a>
+            </ul>
+        </nav>
+    </footer>
+    <img src="Diós, kávés süti.jpg" alt="Diós, kávés süti" width="465px"><br>
+    <header><b>Elkészítési idő: 60 perc</b><br></header>
+    <aside><main><article><selection>
+        <h2>Hozzávalók (4-6 adag)</h2>
+        <h4>
+            <b>A tésztához:</b>
+            <li>18 dkg liszt</li>
+            <li>1 kávéskanál sütőpor</li>
+            <li>1 tojássárgája</li>
+            <li>2 evőkanál tejföl</li>
+            <li>1 késhegynyi só</li>
+            <li>12 dkg vaj</li>
+            <b>A töltelékhez:</b>
+            <li>15 dkg darált dió</li>
+            <li>20 dkg cukor</li>
+            <li>1 csomag vanilliás cukor</li>
+            <li>2 evőkanál</li>
+            <li>5 tojássárgája</li>
+            <li>5 tojás felvert habja</li>
+            <li>3 evőkanál feketekávé</li>
+        </h4>
+    </selection></article></main></aside>
+    <fieldset>
+        <legend><h2>Elkészítés</h2></legend>
+        <ol><b>
+            <li>A tésztához habosra kerevjük a tojássárgáját vajjal. Hozzáadjuk a tejfölt, majd kidolgozzuk a sütőporral és sóval elkevert liszttel. Jól összegyúrjuk a tésztát, majd kétfelé vesszük.</li>
+            <li>A töltelékhez összekeverjük a diót cukorral, vanilliás cukorral, kakaóval, tojássárgájával és kávéval. Óvatosanbeledolgozzuk a tojás felvert habját.</li>
+            <li>Kisodorjuk az egyik tésztát és zsírozzuk. Ráöntjük a tölteléket, majd belefedjük a maradék kidolgozott tésztával.</li>
+            <li>Megszurkáljuk a tetejét villával, majd előmelegített sütőben megsütjük.</li>
+            <li>Tepsiben hagyjuk kihülni a süteményt. Porcokorral megszorva tálalhatjuk.</li>
+        </b></ol>
+    </fieldset><br>
+    <button onclick="Alert()">Biztonságos?</button><br><br>
+    <button onclick="Confirm()">Próbálja meg szerencséjét!!!</button><br><br>
+    <button onclick="Prompt()">Recept keresés</button>
+    <script>
+        function Alert(){
+            alert("Hát persze");
+        }
+        function Confirm(){
+            if(window.confirm("Ön nyert!!!")){
+                window.location.href = 'Nyeremény.mp4';
+            }
+        }
+        function Prompt(){
+            let kerdes = prompt("Mi más érdekel?");
+            if(kerdes == "csokoládés lávasüti"){
+                window.location.href = "csokis_lavasuti.html";
+            }
+            if(kerdes == "gumisüti"){
+                window.location.href = "gumisuti.html";
+            }
+        }
+    </script>
+</body>
+</html>

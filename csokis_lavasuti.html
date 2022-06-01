@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csokis lávasüti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #208000;">
+    <h1>Csokoládés lávasüti</h1>
+    <footer>
+        <nav>
+            <ul class="nav">
+                <a class="ez" href="csokis_lavasuti.html">Csokoládés lávasüti</a>
+                <a href="dios_kaves_pite.html">Diós, kávés pite</a>
+                <a href="gumisuti.html">Gumisüti</a>
+            </ul>
+        </nav>
+    </footer>
+    <img src="Otthoni.jpg" alt="Csokoládés lávasüti" width="465px"><br>
+    <header><b>Elkészítési idő: 37 perc</b><br></header>
+    <aside><main><article><selection>
+        <h2>Hozzávalók (4 adag)</h2>
+        <h4>
+            <li>10 dkg csokoládé (minumum 50%-os)</li>
+            <li>10 dkg vaj (+ a szufléforma kikenéséhez)</li>
+            <li>4 db tojássárgája</li>
+            <li>2 db tojásfehérje</li>
+            <li>10 dkg cukor</li>
+            <li>1 csipet só</li>
+            <li>10 dkg finomliszt</li>
+            <li>10 g cukrozatlan kakaópor (a szufléforma kikenéséhez)</li>
+        </h4>
+    </selection></article></main></aside>
+    <fieldset>
+        <legend><h2>Elkészítés</h2></legend>
+        <ol><b>
+            <li>A csokoládét és a vajat összeolvasztjuk. A 4 tojássárgát a cukorral sűrű habbá verjük. A 2 tojásfehérjét csipet sóval kemény habbá verjük, majd összeforgatjuk a tojássárgás masszával.</li>
+            <li>Hozzáadjuk a lisztet, végül a vajas olvasztott csokoládét is. Négy szufléformát kikenünk vajjal és kakaóval, beleadagoljuk a masszát.</li>
+            <li>Legalább fél órára hűtőszekrénybe tesszük!</li>
+            <li>200 fokra melegített sütőben 12 perc alatt megsütjük. Ezután érdemes 1-2 percet várni, hogy ne égessük meg magunkat.</li>
+            <li>Fogyaszthatjuk egyenesen a szufléformából, de tetszés szerint késsel körbevághatjuk, majd kistányérra boríthatjuk a süteményt.</li>
+        </b></ol>
+    </fieldset><br>
+    <button onclick="Alert()">Biztonságos?</button><br><br>
+    <button onclick="Confirm()">Próbálja meg szerencséjét!!!</button><br><br>
+    <button onclick="Prompt()">Recept keresés</button>
+    <script>
+        function Alert(){
+            alert("Hát persze");
+        }
+        function Confirm(){
+            if(window.confirm("Ön nyert!!!")){
+                window.location.href = 'Nyeremény.mp4';
+            }
+        }
+        function Prompt(){
+            let kerdes = prompt("Mi más érdekel?");
+            if(kerdes == "diós kávés pite"){
+                window.location.href = "dios_kaves_pite.html";
+            }
+            if(kerdes == "gumisüti"){
+                window.location.href = "gumisuti.html";
+            }
+        }
+    </script>
+</body>
+</html>
